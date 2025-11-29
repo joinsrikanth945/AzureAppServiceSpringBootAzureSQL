@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://testsqlserverdb.database.windows.net:1433;database=sqltestdb;user=testlogin@testsqlserverdb;password=Hanuman01!;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: testlogin
+    password: Hanuman01!
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+
+server:
+  port: 9191
